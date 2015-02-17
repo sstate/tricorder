@@ -1,0 +1,70 @@
+{
+  "name": "tricorder",
+  "version": "1.0.0",
+  "description": "A form state mixin for React",
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "flux",
+    "store",
+    "react",
+    "reactjs"
+  ],
+  "scripts": {
+    "examples": "watchify ./examples/app.js -o ./dist/_bundle.js & npm run local_server",
+    "local_server": "echo Open examples on http:localhost:8000/examples && python -m SimpleHTTPServer",
+    "lint": "eslint ./src",
+    "test": "jest"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "ext": ".js"
+        }
+      ]
+    ]
+  },
+  "jest": {
+    "scriptPreprocessor": "./util/jest_preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "./node_modules/react"
+    ],
+    "testFileExtensions": [
+      "js"
+    ]
+  },
+  "peerDependencies": {
+    "react": "0.12.x",
+    "flux": "2.0.x",
+    "lcars": "1.0.x",
+    "cargo-bay": "1.0.x"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "cargo-bay": "^1.0.0",
+    "eslint": "^0.14.1",
+    "jest-cli": "^0.2.2",
+    "lcars": "^1.0.4",
+    "reactify": "^1.0.0",
+    "watchify": "^2.3.0",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sstate/tricorder.git"
+  },
+  "author": "mattwondra <mattwondra@gmail.com> (http://mattwondra.com/)",
+  "contributors": [
+    "rtorr <rtorruellas@gmail.com> (http://rtorr.com/)"
+  ],
+  "dependencies": {
+    "amp-merge": "^1.0.0",
+    "memory-alpha": "^1.0.0"
+  }
+}
