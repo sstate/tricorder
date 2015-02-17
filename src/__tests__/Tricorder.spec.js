@@ -1,6 +1,6 @@
 jest.autoMockOff();
 
-describe('FormStateMixin', function() {
+describe('Tricorder', function() {
   'use strict';
 
   var FormStateMixin = require('./../index');
