@@ -39,7 +39,7 @@
     ]
   },
   "peerDependencies": {
-    "react": "0.12.x",
+    "react": "0.13.x",
     "flux": "2.0.x",
     "lcars": "1.0.x",
     "cargo-bay": "1.0.x"
