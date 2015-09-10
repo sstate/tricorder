@@ -1,6 +1,6 @@
 {
   "name": "tricorder",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A form state mixin for React",
   "license": "MIT",
   "main": "src/index.js",
@@ -63,6 +63,7 @@
   ],
   "dependencies": {
     "amp-merge": "^1.0.0",
+    "keymirror": "^0.1.1",
     "memory-alpha": "^1.0.0"
   }
 }
