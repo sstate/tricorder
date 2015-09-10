@@ -1,6 +1,6 @@
 {
   "name": "tricorder",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A form state mixin for React",
   "license": "MIT",
   "main": "src/index.js",
@@ -39,8 +39,6 @@
     ]
   },
   "peerDependencies": {
-    "react": "0.13.x",
-    "flux": "2.1.x",
     "lcars": "1.1.x",
     "cargo-bay": "1.1.x"
   },
